@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 2
+   
+   Save your Fork Graphic Design Styles
+   Author: Aiden Martinez
+   Date:   11.09.2018
+
+   Filename: sf_effects.css
+
+*/
+
+/* Body Header Styles */
+body {
+    box-shadow: rgb(51, 51, 51) 10px 10px 50px;
+}
+
+
+/* Navigation Tabs List Styles */
+body>header nav.tabs {
+    background-image: url(sf_back1.png);
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+body>header nav.tabs li {
+    transform: perspective(50px) rotateX(20deg);
+}
+
+body>header nav.tabs li:hover {
+    background-color: rgb(231, 231, 231);
+    transition: 0.15s;
+}
+
+/* Left Section Styles */
+section#left nav.vertical {
+    border: 1px solid rgb(20, 167, 170);
+    border-radius: 25px;
+}
+
+section#left nav.vertical>h1 {
+    border-radius: 23px 23px 0px 0px;
+}
+
+/* I used 23px instead of 25px so it would be covered entirely compared to slight edges of the background showing when 25px was used. */
+
+/* Center Article Styles */
+section#center article {
+    background: radial-gradient(white 30%, rgb(151, 151, 151))
+}
+
+/* Blockquote Styles */
